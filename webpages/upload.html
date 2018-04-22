@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script src="trickFiller.js"></script>
+<script src="upload.js"></script>
+<link rel="stylesheet" href="styleMain.css">
+
+<body onload="start();">
+  <div class="wrapper">
+    <h1>Trials HQ</h1>
+    <div id="loginBox"></div>
+
+    <header>
+      <div class="nav">
+        <ul>
+          <li><a class="currentLink" href="index.html">Home</a></li>
+          <li class=""><a href="easy.html">Easy</a>
+            <ul>
+              <li><a onclick="createCookie('trick',1)">Balancing</a></li>
+              <li><a onclick="createCookie('trick',2)">Full Lock Turns and Pivot Turns</a></li>
+              <li><a onclick="createCookie('trick',3)">Body Positioning</a></li>
+              <li><a onclick="createCookie('trick',4)">Wheelies</a></li>
+              <li><a onclick="createCookie('trick',5)">Riding With Confidence</a></li>
+            </ul>
+          </li>
+          <li class=""><a href="easy.html">Medium</a>
+            <ul>
+              <li><a onclick="createCookie('trick',6)">Hoping the Front Wheel</a></li>
+              <li><a onclick="createCookie('trick',7)">Hoping the Rear Wheel</a></li>
+              <li><a onclick="createCookie('trick',8)">Double Blips and Zaps</a></li>
+              <li><a onclick="createCookie('trick',9)">Using the Bashplate</a></li>
+              <li><a onclick="createCookie('trick',10)">Steep Climbs and Ascents</a></li>
+              <li><a onclick="createCookie('trick',11)">Descents, Drop Offs and Downhill</a></li>
+            </ul>
+          </li>
+          <li class=""><a href="easy.html">Hard</a>
+          <ul>
+            <li><a onclick="createCookie('trick',12)">Splatters and Jumping Gaps</a></li>
+            <li><a onclick="createCookie('trick',13)">Holding Pressure</a></li>
+            <li><a onclick="createCookie('trick',14)">Floater Turns</a></li>
+            <li><a onclick="createCookie('trick',15)">Jumping Gaps</a></li>
+            <li><a onclick="createCookie('trick',16)">Flips Turns</a></li>
+            <li><a onclick="createCookie('trick',17)">Hopping for Traction</a></li>
+          </ul>
+        </li>
+        <li class=""><a href="account.html">Profile</a>
+        </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <div id="uploadSection">
+    <form id="uploadForm" method="post" enctype="multipart/form-data" action="/">
+      <input type="file" name="filename">
+      Username: <input type="text" name="username" value="" id="usernameField" readonly>
+      Trick: <input type="text" name="trickName" value="" id="trickNameField" readonly>
+      <input type="hidden" type="text" name="trick" value="" id="trickNumberField" readonly>
+      <input type="submit" value="upload">
+    </form>
+    <script>
+    if (readCookie("username") == null) {
+      window.location.pathname = "/login.html";
+
+    }
+    var username = readCookie("username");
+    var usernameField = document.getElementById("usernameField");
+    usernameField.value= username;
+    var trickName = getTrickInfo(null)[1];
+
+    var trickNameField = document.getElementById("trickNameField");
+    var trickNumberField = document.getElementById("trickNumberField");
+    trickNumberField.value = readCookie("trick");
+    trickNameField.value = trickName;
+    </script>
+  </div>
+</body>
+</html>

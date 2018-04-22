@@ -1,0 +1,24 @@
+{
+  "name": "fyptrials",
+  "version": "1.0.0",
+  "description": "Trials training website",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "UP759990",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "dat-transformer": "^0.2.6",
+    "default-passive-events": "^1.0.7",
+    "express": "^4.15.2",
+    "express-fileupload": "^0.4.0",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "mysql": "^2.13.0",
+    "sqlite": "^2.3.0",
+    "sqlite3": "^3.1.13",
+    "transformer": "^1.2.6"
+  }
+}

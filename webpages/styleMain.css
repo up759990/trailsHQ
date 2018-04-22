@@ -1,0 +1,251 @@
+#loginButton {
+  display:inline-block;
+  color:white;
+  font-size: 1.9vw;
+  background-color: #63615A;
+  padding: 10px 18px;
+  margin:10%;
+  margin-top:0;
+  margin-bottom: 10px;
+
+
+  }
+#loginBox {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+h4 {
+  color:white;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: underline;
+  font-size: 2vw;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h3 {
+  color:white;
+  text-align:center;
+  padding-bottom: -30px;
+  text-decoration: underline;
+  font-size: 2.2vw;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#completedTricks {
+  color:white;
+  text-align: center;
+}
+#completedTricks > ul {
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 1.7vw;
+}
+
+
+#uploadForm {
+  color:white;
+  text-align: center;
+}
+
+h2 {
+  position:absolute;
+  top:-10px;
+  color:white;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+
+}
+#oneComment {
+  height:auto;
+  font-size: 2vw;
+}
+.wordwrap {
+   white-space: pre-wrap;
+   white-space: -moz-pre-wrap;
+   white-space: -pre-wrap;
+   white-space: -o-pre-wrap;
+   word-wrap: break-word;
+   font-size: 1.2vw;
+}
+.commentArea {
+  width:inherit;
+  background-color: #758EDC;
+  width:90%;
+  margin-left: 5%;
+}
+#commentInput {
+    resize: vertical;
+    width:90%;
+    margin-left:5%;
+    }
+
+
+
+h1 {
+  font-size: 40px;
+  color:white;
+  text-align:center;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p {
+  text-align:left;
+  color: white;
+  margin-left: 10%;
+  margin-right:10%;
+  font-size: 0.8em;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ }
+ a {color:white;
+   text-decoration: none;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   }
+a:hover {
+  text-decoration: underline
+}
+.nav li {
+  width: 210px;
+  border-bottom: none;
+  height: 60px;
+  font-size: 1.5em;
+  display: inline-block;
+
+  z-index: 999;
+}
+.nav ul {
+  list-style: none;
+  background-color: #5e605e;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding-top: 20px;
+
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav ul > li > ul > li {
+  font-size: 0.7em;
+  width:inherit;
+}
+
+.nav li ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+  z-index: 999;
+}
+.nav li:hover ul {
+  display: block;
+  background-color: #50605f;
+  opacity: 0.85;
+}
+
+body {
+  background-color:#2c3335;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px;
+    margin-bottom: 10px;
+}
+.currentLink {
+  background-color: #7e8591
+}
+
+#vidBox {
+  position: relative;
+  padding-bottom: 20%;
+  padding-top: 28%;
+  height: 0;
+  overflow: hidden;
+
+}
+
+#vidBox iframe,
+#vidBox object,
+#vidBox embed {
+  position: absolute;
+  top:+50px;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+
+}
+#uploadButton {
+  border:none;
+  background-color: #535C65;
+  color:white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+}
+#uploadButton:hover {
+  text-decoration: underline;
+  border-style:dotted;
+
+}
+
+#commentBox {
+  position: relative;
+  top:40px;
+  left: 10%;
+  width: 80%;
+
+
+}
+
+#userUpload {
+  padding-top: 10px;
+  display:block;
+  margin:0 auto;
+  min-width: 90%;
+  max-height: 400px;
+}
+
+#info {
+  width:inherit;
+
+  min-width: 90%;
+  font-size: 2vw;
+  min-height: 35px;
+  background-color: #537d91;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+.arrow {
+  height:25px
+}
+#votes {
+  display: inline;
+  float:right;
+
+}
+#loginForm,#signUpForm {
+  font-size: 2vw;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+input {
+  font-size: 2vw;
+  width:100%;
+  text-align: center;
+
+}
+button {
+  display: block;
+  margin: 0 auto;
+  font-size: 2vw;
+}
